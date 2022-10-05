@@ -26,7 +26,7 @@ $ yarn start # npm run start
 ## Install App
 - Clone the project
 ```shell
-$ git clone https://github.com/VMinhHa/Calculator-.git
+$ git clone https://github.com/VMinhHa/Calculator.git
 ```
 - Install package dependencies
 ```shell
