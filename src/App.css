@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --body-bg: #a0d7fe;
+  --text-color: #6d6d6d;
+  --txt-white: #fff;
+  --dark-black: #210035;
+  --bg-dark: #2aa0f4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --webkit-tap-highlight-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dark {
+    background-image: linear-gradient(to top, var(--dark-black), var(--bg-dark));
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.light {
+    background-image: linear-gradient(to top, var(--body-bg), #fff);
 }
 
-.App-link {
-  color: #61dafb;
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: unset;
+        padding-top: 0;
+    }
+    .app{
+        height: 100vh;
+    }
 }

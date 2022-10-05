@@ -1,0 +1,10 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__icon {
+    color: #e9c46a;
+    font-size: 24px;
+    cursor: pointer;
+}
